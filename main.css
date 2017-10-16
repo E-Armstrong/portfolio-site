@@ -8,16 +8,38 @@ body {
 }
 
 #main-container {
-    position: relative;
+    position: fixed;
+    width: 100vw;
+}
+
+#initial-content {
+    text-align: center;
+    margin: auto;
+    width: 250px;
+    top: 1px;
+
+}
+
+#the-emoticon {
+    font-size: 4rem;
 }
 
 h1 {
+    position: relative;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 1.7rem;
     color: #2b2b2b;
-    margin-top: 30vw;
-    margin-left: 37vw;
 }
+
+p {
+    position: relative;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: .7rem;
+    color: #2b2b2b;
+    
+}
+
+
 
 @media (min-width: 280px){
     html {
@@ -37,12 +59,7 @@ h1 {
     }
 }
 
-p {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: .7rem;
-    color: #2b2b2b;
-    
-}
+
 
 #projects {
     background-color: rgba(255, 0, 0, 0.173);
@@ -54,4 +71,13 @@ p {
     text-align: center;
     margin: auto;
     margin-top: 9rem;
+}
+
+.scroll-container {
+    position: relative;
+    top: 100vw;
+    width: 100vw;
+    height: 100vw;
+    background-color: yellow;
+    z-index: 10;
 }
