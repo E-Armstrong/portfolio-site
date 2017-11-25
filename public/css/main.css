@@ -8,16 +8,15 @@ body {
 }
 
 #main-container {
-    position: fixed;
     width: 100vw;
 }
 
-#initial-content {
-    text-align: center;
-    margin: auto;
-    width: 250px;
-    top: 1px;
 
+#initial-content {
+    position: fixed;    
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 #the-emoticon {
@@ -41,24 +40,28 @@ p {
 
 
 
-@media (min-width: 280px){
+@media (min-width: 576px){
     html {
         font-size: 18px;
     }
 }
 
-@media (min-width:500px){
+@media (min-width:768px){
     html {
         font-size: 26px;
     }
 }
 
-@media (min-width:720px){
+@media (min-width:992px){
     html {
         font-size: 35px;
     }
 }
-
+@media (min-width:1200px){
+    html {
+        font-size: 44px;
+    }
+}
 
 
 #projects {
@@ -75,9 +78,9 @@ p {
 
 .scroll-container {
     position: relative;
-    top: 100vw;
+    top: 100vh;
     width: 100vw;
-    height: 100vw;
-    background-color: yellow;
+    height: 300vw;
+    background-color: #FFDA30;
     z-index: 10;
 }
